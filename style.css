@@ -1,0 +1,74 @@
+body{
+    margin:0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg,#0f172a,#1e293b,#111827);
+    height:100vh;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    color:white;
+}
+
+/* Header */
+header{
+    width:100%;
+    display:flex;
+    justify-content:space-between;
+    padding:15px 40px;
+    background:rgba(0,0,0,0.6);
+    backdrop-filter: blur(10px);
+}
+
+.logo-text{
+    font-size:22px;
+    font-weight:bold;
+    color:gold;
+}
+
+.btn{
+    padding:8px 18px;
+    border:none;
+    border-radius:6px;
+    cursor:pointer;
+    font-weight:bold;
+    margin-left:10px;
+    transition:0.3s;
+}
+
+.login{
+    background:#facc15;
+}
+
+.register{
+    background:gold;
+}
+
+.btn:hover{
+    transform:scale(1.1);
+}
+
+/* Main Card */
+.main-card{
+    margin-top:50px;
+    background:rgba(255,255,255,0.05);
+    padding:40px;
+    border-radius:20px;
+    backdrop-filter: blur(15px);
+    box-shadow:0 0 30px rgba(255,215,0,0.4);
+    text-align:center;
+    width:90%;
+    max-width:450px;
+    animation: glowBorder 3s infinite alternate;
+}
+
+/* Animated Border Glow */
+@keyframes glowBorder{
+    from{box-shadow:0 0 20px gold;}
+    to{box-shadow:0 0 40px orange;}
+}
+
+/* Logo */
+.logo-container{
+    width:180px;
+    height:180px;
+    
